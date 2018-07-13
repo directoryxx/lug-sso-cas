@@ -3,10 +3,11 @@
     "description": "Package for CAS Linux User Group",
     "type": "library",
     "require": {
-        "jasig/phpcas": "^1.3"
+        "php": ">=5.3",
+        "jasig/phpcas": "*"
     },
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "1.0",
     "autoload": {
     	"psr-0": { "SSO": "."}
     }
