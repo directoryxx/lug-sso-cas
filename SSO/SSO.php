@@ -31,7 +31,7 @@ if (class_exists('phpCAS')) {
   /**
    * Create phpCAS client
    */
-  phpCAS::client(CAS_VERSION_2_0, CAS_SERVER_HOST, CAS_SERVER_PORT, CAS_SERVER_URI);
+  phpCAS::client(CAS_VERSION_3_0, CAS_SERVER_HOST, CAS_SERVER_PORT, CAS_SERVER_URI);
 
   /**
    * Set no validation.
@@ -106,7 +106,7 @@ class SSO
    */
   private static function init() {
     // Create CAS client.
-    phpCAS::client(CAS_VERSION_2_0, CAS_SERVER_HOST, CAS_SERVER_PORT, CAS_SERVER_URI);
+    phpCAS::client(CAS_VERSION_3_0, CAS_SERVER_HOST, CAS_SERVER_PORT, CAS_SERVER_URI);
 
     // Set no validation.
     phpCAS::setNoCasServerValidation();
